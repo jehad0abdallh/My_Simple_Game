@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html dir='rtl' lang='ar'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<style>
+    
+     .box{
+        position: relative;
+        display: inline-block;
+        background-color:darkcyan
+        
+       /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        font-size: larger;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        color: white;
+        top: 25%; /* Adjust this value to move the positioned div up and down */
+        width: 60%; /* Set the width of the positioned div */
+    }
+    .zoom:hover {
+        transform: scale(.75);
+        opacity: .5;
+        
+       
+    }
+    
+ 
+</style>
+    <title>index </title>
+</head>
+<body class="container-fluid" >
+  <!--<div class="fixed-top" >
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class=" p-4">
+            <ul class="sidebar-nav">
+                <li class="nav-item">
+                  <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="js-scroll-trigger" href="#page-top">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <nav class="navbar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>-->  
+      
+      
+      
+      <div  style ="background-image: url('img/8.jpg');width: 100%; height:500px;" >
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class=" p-4">
+                <div class="text-white "><ul class="navbar-nav mr-auto" style="color: white;">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul></div>
+     
+              </div>
+            </div>
+            <nav class="navbar">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="img/icons8-open-view-24.png"></span>
+                <!--<img data-src="align.svg" class="iconic iconic-sm" data-text-alignment="center" alt="align" />
+<img data-src="align.svg" class="iconic iconic-md" data-text-alignment="center" alt="align" />
+<img data-src="align.svg" class="iconic iconic-lg" data-text-alignment="center" alt="align">-->
+              </button>
+            </nav>
+          </div>
+        
+
+        <div class="container text-center my-auto"style="padding-top:10 %;">
+          <h1 class="mb-1"> اللعبه </h1>
+          <h3 class="mb-5">
+            <em>  وسيله مريحه لتجمع عدد من الالعاب البرامج المفيده والمسليه لطفلك  </em>
+          </h3>
+          <div style="margin: auto;width: 50%;padding: 10px;  text-align: center;">
+            <button type="button" class="btn btn-success btn-lg" id="click">ابداء في تعلم </button>
+        </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <section class="content-section bg-light " id="about" style="padding-top: 5%; padding-bottom: 5%;">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <h2> انتي محتاجه للعنايه بنفسك وطفلك ! 
+              </h2>
+              <p class="lead mb-5">   هنا سوف تجدي الكثير من النصائح لكي ولطفلك في كل المراحل بالتأكيد سوف تكون مفيده </p>
+              <a class="btn btn-dark btn-lg "  style ="background-color: pink;"href="https://www.supermama.me/">  &nbsp; &nbsp; سوبر ماما &nbsp; &nbsp;</a>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section class="content-section" id="portfolio" style="margin-top: 5%;">
+        <div class="container">
+          <div class="content-section-heading text-center">
+            <h2 class=" mb-0">قسم الالعاب</h2>
+            <h3 class="text-secondary mb-5">بعض الالعاب المسليه التي  تساعد الطفل لينمو بساعده وزكاء</h3>
+          </div>
+          <div class="row no-gutters" style="margin-bottom: 5%;">
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.matteljv.uno&hl=en" style="color:blue">
+                <div class="box">
+                    <img src="img/unnamed.webp" alt="Flying Kites"style="width:500px; height: 350px;" class="zoom" >
+                    <div class="text">
+                        <div class="caption-content">
+                            <div class="h2" style="color:white">اونو </div>
+                            <p class="mb-0" style="color:white">هذه اللعبه تجمع بين المتعة و تجمع الاصدقاء </p>
+                          </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.iabuzz.puzzle4kidsAnimals&hl=en">
+                <div class="box">
+                    <img src="img/unnamed (1).webp" alt="Flying Kites"style="width:500px; height: 350px;" class="zoom">
+                    <div class="text">
+                        <div class="caption-content">
+                          <div class="h2" style="color:white"> التركيب </div>
+                          <p class="mb-0" style="color:white"> لعبه تنمي الخيال وتفتح افاق جديده لللطفل
+                           </p>
+                          </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 ">
+              <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.mobirix.differencegame&hl=en">
+                <div class="box">
+                    <img src="img/unnamed (4).webp" alt="Flying Kites"style="width:500px; height: 350px;"class="zoom" >
+                    <div class="text">
+                        <div class="caption-content">
+                          <div class="h2" style="color:white"> اختلافات الصور  </div>
+                          <p class="mb-0" style="color:white">  هذه اللعبه تساعد الطفل في التركيز وتجعله سريع البديها
+                           </p>
+                          </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.blackout.cube&hl=en">
+                <div class="box">
+                    <img src="img/unnamed (5).webp" alt="Flying Kites"style="width:500px; height: 350px;" class="zoom">
+                    <div class="text">
+                        <div class="caption-content">
+                          <div class="h2" style="color:white"> تكوين الكلمات </div>
+                          <p class="mb-0" style="color:white">هذه اللعبه تجعل الطفل قادر علي تكوين كلمات مما تساعده في الكتابه ومعرفه الحروف </p>
+                          </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- map-->
+     <div id="contact" class="map" style="width: 100%; height: 25%;">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/De8jPA8w2Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+      <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4 bg-info">
+
+    <!-- Footer Elements -->
+    <div class="container ">
+  
+      <!--Grid row-->
+      <div class="row">
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-12 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4">
+  
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+  
+        </div>
+        <!--Grid column-->
+  
+      </div>
+      <!--Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      Gehad
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+      </body>
+
+
+<script>
+    document.getElementById('click').addEventListener('click', start)
+    function start()
+    {
+var x= Math.floor((Math.random()*2)+1);
+window.open(`${x}.html`);
+    }
+</script>
+</body>
+</html>
