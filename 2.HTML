@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>game2</title>
+</head>
+ <body style="background-color: white ; background-size:cover;">
+    <div class="upper-bar flout container " style="background-color: unset;">
+        <div class="container">
+            <div class="row">
+                 <div class="col-sm">
+                    <span style="font-family: fantasy, sans-serif;font-size: 25px;"> 
+                        <div id="timeremaining" style="color: black;">
+                            <i class='fa fa-hourglass-half'></i> Time remaining:
+                            <span id="timeremainingvalue"style="color: black;">60</span> sec                          
+                        </div>
+                    </span>                    
+                </div>                                     
+                <div class="col-sm text-right">
+                     <span class="Get-Quote" style="font-family: fantasy, sans-serif; font-size: 25px;">
+                         <div id="score"><i class="fa fa-cog fa-pulse"></i> 
+                            
+                         </div>
+                     </span>                        
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="flout container">
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+      </div>
+       
+   </div>
+   <div id="startreset">
+    Start Game
+</div>  
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+   <script src="js/main1.js"></script>
+</body>
+</html>
